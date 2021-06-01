@@ -1,0 +1,19 @@
+1. How many system calls are placed in total by each HelloWorld program?
+	HelloWorld.c = 29
+	HelloWorld.java = 166
+
+2.How many different system calls (i.e., counting only one occurrence of a particular system call) are placed by each HelloWorld program? 
+	HelloWorld.c = 12 
+	HelloWorld.java = 20
+
+3.Based on your intuition, on reading man pages, and on the information in the trace files, pick three system calls placed by the Java HelloWorld program and say what you think they do (hint: use man). 
+	execve: Executes the program pointed to by filename. 
+	clone() creates a new process.
+	close() closes a file descriptor.           
+
+4.In lecture, we discussed how C library translates a C lib function such as open to sys_open. It is easy to understand how this works for a C program. However, does this still apply to Java programs? State your reasoning with evidence.
+	idk 
+
+
+
+

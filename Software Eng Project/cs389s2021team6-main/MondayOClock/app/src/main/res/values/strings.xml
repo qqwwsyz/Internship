@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MondayO\'Clock</string>
+    <string name="hi">Hi</string>
+    <string name="receive">Receive</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send">Send</string>
+    <string name="todo">todo</string>
+    <string name="Chat">Chat</string>
+    <string name="Call_me">Call the number below</string>
+    <string name="phone">Call help: 914-333-3333
+
+                          Email: 12haha@gmail</string>
+</resources>

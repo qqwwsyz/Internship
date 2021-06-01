@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    tools:context=".BigMenu"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/activities"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_btn"
+                    android:text="Alarm"
+                    android:onClick="gotoMain"
+                    android:textColor="#ffff"
+                    android:textStyle="bold">
+
+                </Button>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"></Space>
+
+                <Button
+                    android:id="@+id/chat_bu"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/round_btn"
+                    android:text="Chat"
+                    android:onClick="gotoChat"
+                    android:textColor="#ffff"
+                    android:textStyle="bold">
+
+                </Button>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"></Space>
+
+                <Button
+                    android:id="@+id/setting"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_btn"
+                    android:onClick="gotoSetting"
+                    android:text="Setting"
+                    android:textStyle="bold"
+                    android:textColor="#ffff">
+
+                </Button>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:background="#ffff">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/news_btn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/btn_news"
+                android:onClick="gotoNews"
+                android:src="@drawable/icon_news"></ImageButton>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></Space>
+
+            <ImageButton
+                android:id="@+id/weather"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/btn_weather"
+                android:onClick="gotoWeather"
+                android:src="@drawable/icon_weather"></ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/todo_list"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/btn_todo_list"
+                android:onClick="gotoTodoList"
+                android:src="@drawable/icon_todo_list"></ImageButton>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></Space>
+
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/btn_chat"
+                android:onClick="gotoChat"
+                android:src="@drawable/icon_chat"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></Space>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></Space>
+
+    </LinearLayout>
+
+
+</LinearLayout>

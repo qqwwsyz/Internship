@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mondayoclock">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_applogo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_applogo2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MathQuizActivity"
+            android:label="Monday O'Clock"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".BigMenu"></activity>
+        <activity android:name=".TodoList"></activity>
+        <activity android:name=".News"></activity>
+        <activity android:name=".HelpActivity"/>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".Weather"></activity>
+        <activity android:name=".Detailed" android:screenOrientation="locked" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".SplashScreen" android:screenOrientation="locked" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Setting"
+            android:label="Setting"></activity>
+        <activity android:name=".SettingDetail"
+            android:label="Customize"></activity>
+        <activity android:name=".SettingPreview"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <color name="pink1">#FBEEE6</color>
+
+    <color name="pink2">#FFE5D8</color>
+
+    <color name="pink3">#FFCAD4</color>
+
+    <color name="pink4">#F3ABB6</color>
+
+    <color name="pink5">#9F8189</color>
+
+
+
+
+    <color name="purple1">#FFEFFF</color>
+
+    <color name="purple2">#E9D3FF</color>
+
+    <color name="purple3">#CDB7F6</color>
+
+
+
+    <color name="beige1">#F6F3E7</color>
+
+    <color name="beige2">#EBE6D9</color>
+
+    <color name="beige3">#FFE5D8</color>
+
+
+
+    <color name="blue1">#E1F6FF</color>
+
+    <color name="blue2">#CDF0FF</color>
+
+    <color name="blue3">#B9EBFF</color>
+
+
+    <color name="green1">#B8D5CD</color>
+
+    <color name="green2">#BABAAE</color>
+
+    <color name="green3">#d4eee2</color>
+
+
+    <color name="timePicker">#757474</color>
+
+
+
+</resources>

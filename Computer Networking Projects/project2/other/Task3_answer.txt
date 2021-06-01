@@ -1,0 +1,43 @@
+Task 3
+Using window size as a parameter, for example, for window size = 10 
+Test script runs as	
+python3 .receiver.py 5004 10  RECEIVED_FILE &
+python3 .forwarder.py 5002 5004 &
+cat SMALL_FILE  python3 .sender.py 127.0.0.1 5002 10 &
+
+After test 10 data points from 5 to 14 as 10 different window sizes, and repeatedly experimented at least 5 times with mean values of transmisson time and count the average speed.
+
+The statistical data shows as below
+
+window size = 5
+Sent 10491 bytes in 46.839 seconds in average 0.224 kBs
+
+window size = 6
+Sent 10491 bytes in 46.533 seconds in average 0.225 kBs
+
+window size = 7
+Sent 10491 bytes in 47.856 seconds in average 0.219 kBs
+
+window size = 8
+Sent 10491 bytes in 51.942 seconds in average 0.202 kBs
+
+window size = 9
+Sent 10491 bytes in 45.013 seconds in average 0.233 kBs
+
+window size = 10
+Sent 10491 bytes in 44.053 seconds in average 0.238 kBs
+
+window size = 11
+Sent 10491 bytes in 45.024 seconds in average 0.233 kBs
+
+window size = 12
+Sent 10491 bytes in 50.318 seconds in average 0.208 kBs
+
+window size = 13
+Sent 10491 bytes in 46.221 seconds in average 0.227 kBs
+
+window size = 14
+Sent 10491 bytes in 46.676 seconds in average 0.225 kBs
+As statistical
+
+We can concludes that setting window size = 10 result in highest throughput.

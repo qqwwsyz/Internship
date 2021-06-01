@@ -1,0 +1,99 @@
+
+Q2:
+Prediction:
+Latency: L1-delay + L2-delay + L3-delay = 80 ms
+Throughput: min(L1bw,L2bw,L3bw) = 20 Mbps
+                 20   40   30
+
+Actual experiment:
+Latency:rtt/2= 162.102/2 = 81.051 ms
+Throughput: 20.35 Mbps
+
+Explaination:
+The predict latency is equal to the sum of the latencies of L1 L2 L3.
+The throughput is equal to the smallest throughput along the path.
+----------------------------------------
+Q3:
+
+**Two Pairs:
+
+Prediction:
+Latency: L1-delay + L2-delay + L3-delay = 80 ms
+Throughput: min(L1bw+L2bw+L3bw)/2 = 10 Mbps
+
+
+
+Real:
+h1 - h4
+Latency : rtt /2 = 165.409/2 = 82.7045 ms
+Throughput: 18.46 Mbps
+
+
+
+h7 - h9
+Latency: rtt/2 = 165.187/2 = 82.5935 ms
+Throughput: 3.95 Mbps
+
+
+**Three Pairs:
+Prediction:
+Latency : L1-delay + L2-delay + L3-delay = 80 ms
+Throughput: min(L1bw+L2bw+L3bw)/3= 6.7 Mbps
+
+h1 - h4
+Latency : rtt / 2 = 162.021 / 2 = 81.0105 ms
+Throughput: 13.38 Mbps
+
+h7 - h9
+Latency: rtt / 2 = 161.927 / 2 = 80.9635 ms
+Throughput: 7.349 Mbps
+
+h8 - h10
+Latency: rtt / 2 = 162.255 / 2 = 81.1275 ms
+Throughput : 18.1075 Mbps
+
+Explaination:
+1. Predict latency and real latency:
+
+Basically, the latency is the sum of L1 L2 L3 latencies.
+The delay does not change with the host's pair of small communications, because 
+the transmission and propagation time is much less than the queuing delay.
+However the latency might increase within the number of hosts increase.
+
+2. Predict throughput and real throughput:
+Basically, the predict throughput = min (L1 L2 L3)/the number of simultaneous connections.
+But seems like it is different between the prediction and the real throughput.
+This is because  we cannot measure throughput at the same time.
+
+
+----------------------------------------
+
+Q4:
+
+Expected value:
+
+h1 - h4:
+Latency: L1 delay + L2 delay + L3 delay = 80 ms
+Throughput: min(L1bw,L2bw,L3bw) - (47-40)/2 = 18.5 Mbps
+Average rtt = 162.555 ms
+
+h5 - h6:
+Latency: L4 delay + L2 delay + L5 delay = 20 ms
+Throughput: min(L4bw,L2bw,L5bw) - (47-40)/2 = 23.5 Mbps
+Average rtt = 42.118 ms
+
+h1 - h4:
+Latency： rtt/2 = 162.555/2 = 81.2775 ms
+Throughput: 18.45 Mbps
+
+h5 - h6:
+Latency： rtt/2 = 42.118/2 = 21.059 ms
+Throughput: 21.13 Mbps
+
+Explanation:
+As our measured data states, L1+L4 in the path is larger than L2. 
+The origin h1 - h4 without connecting h5 - h6 is around 20.567mbps. 
+And the origin h5 - h6 without connecting h1-h2 is around 26.687 Mbps. 
+So we sum up (20.567 + 26.687) is around 47 Mbps. 
+And the bandwidth for L2 is around 40 Mbps. 
+Since 40 < 47 Mbps, we assume each pairs share 7/2 which is 3.5 Mbps. So we subtract from the original values.
